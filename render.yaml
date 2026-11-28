@@ -40,9 +40,6 @@ services:
       # 웹사이트 운영 (docs/web-launch-guide.md 참고, 모두 선택)
       - key: SITE_URL
         sync: false
-      # 예전 서비스에만: 새 주소로 보내기 (docs/move-to-pomotrip.md)
-      - key: MOVED_TO
-        sync: false
       - key: GOATCOUNTER_CODE
         sync: false
       - key: GOOGLE_SITE_VERIFICATION

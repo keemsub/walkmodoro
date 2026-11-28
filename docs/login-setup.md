@@ -1,9 +1,9 @@
 # 로그인과 데이터베이스 설정하기
 
-아래에서 `내주소`는 Render가 준 주소예요. 예: `https://walkmodoro-abcd.onrender.com`
+아래에서 `내주소`는 Render가 준 주소예요. 예: `https://pomotrip.onrender.com`
 키와 비밀값은 **채팅이나 코드에 붙여 넣지 말고**, Render 화면에만 넣어 주세요.
 
-Render에 값 넣는 곳: Render 대시보드 → walkmodoro 서비스 → 왼쪽 **Environment** → 해당 이름 옆 값 입력 → **Save Changes** (자동으로 다시 배포돼요)
+Render에 값 넣는 곳: Render 대시보드 → pomotrip 서비스 → 왼쪽 **Environment** → 해당 이름 옆 값 입력 → **Save Changes** (자동으로 다시 배포돼요)
 
 ## 1. 데이터베이스 (Neon, 무료)
 
@@ -24,7 +24,7 @@ Render에 값 넣는 곳: Render 대시보드 → walkmodoro 서비스 → 왼�
 
 ## 3. 구글 로그인
 
-1. [Google Cloud Console](https://console.cloud.google.com) → 새 프로젝트 (이름: walkmodoro)
+1. [Google Cloud Console](https://console.cloud.google.com) → 새 프로젝트 (이름: pomotrip)
 2. **API 및 서비스 → OAuth 동의 화면**: 외부(External), 앱 이름·지원 이메일 입력 후 저장
 3. **사용자 인증 정보 → 사용자 인증 정보 만들기 → OAuth 클라이언트 ID**
    - 애플리케이션 유형: **웹 애플리케이션**
