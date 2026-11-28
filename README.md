@@ -31,7 +31,7 @@
 - [uv](https://docs.astral.sh/uv/getting-started/installation/) 설치: 파이썬 버전과 패키지를 알아서 관리해 주는 도구예요.
   - macOS / Linux: `curl -LsSf https://astral.sh/uv/install.sh | sh`
   - Windows (PowerShell): `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
-- 이 저장소 내려받기: `git clone https://github.com/keemsub/walkmodoro.git && cd walkmodoro`
+- 이 저장소 내려받기: `git clone https://github.com/keemsub/pomotrip.git && cd pomotrip`
 
 ### 2. 패키지 설치
 
@@ -66,9 +66,9 @@ uv run uvicorn app.main:app --reload
 [Render](https://render.com) 무료 플랜에 올리는 설정(`render.yaml`, `Dockerfile`)이 들어 있어요. 한 번만 따라 하면 이후엔 main에 합칠 때마다 자동으로 다시 배포돼요.
 
 1. render.com 에서 **GitHub 계정으로 가입**해요.
-2. 대시보드에서 **New → Blueprint** 를 누르고, GitHub 연결 화면에서 `walkmodoro` 저장소 접근을 허용한 뒤 고르세요.
+2. 대시보드에서 **New → Blueprint** 를 누르고, GitHub 연결 화면에서 `pomotrip` 저장소 접근을 허용한 뒤 고르세요.
 3. `ORS_API_KEY` 입력 칸이 나오면 키를 넣거나, 없으면 비워 두세요(데모 지도로 동작). 나중에 서비스의 Environment 메뉴에서 넣어도 돼요.
-4. **Deploy Blueprint** 를 누르고 몇 분 기다리면 `https://walkmodoro-xxxx.onrender.com` 같은 주소가 생겨요.
+4. **Deploy Blueprint** 를 누르고 몇 분 기다리면 `https://pomotrip.onrender.com` 같은 주소가 생겨요.
 5. 휴대폰 브라우저로 그 주소를 열고 위치 권한을 허용하세요.
 6. 앱처럼 쓰려면 홈 화면에 추가하세요.
    - 아이폰(Safari): 공유 버튼 → **홈 화면에 추가**

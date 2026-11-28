@@ -76,7 +76,7 @@ def _short(text: str) -> str:
 class WikiGuide:
     def __init__(self, client: httpx.Client | None = None) -> None:
         self.client = client or httpx.Client(
-            timeout=6, headers={"User-Agent": "walkmodoro/1.0 (pomodoro walking app)"}
+            timeout=6, headers={"User-Agent": "pomotrip/1.0 (pomodoro walking app)"}
         )
         self._cache: dict[tuple, tuple[float, PlaceInfo | None]] = {}
 

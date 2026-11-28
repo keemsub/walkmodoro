@@ -1079,7 +1079,7 @@ wheels = [
 ]
 
 [[package]]
-name = "walkmodoro"
+name = "pomotrip"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

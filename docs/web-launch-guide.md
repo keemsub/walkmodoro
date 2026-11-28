@@ -1,7 +1,7 @@
 # 웹사이트로 운영하기: 전부 무료
 
 스토어 없이 `https://pomotrip.onrender.com` 주소 하나로 운영하는 방법이에요.
-예전 주소(walkmodoro.onrender.com)에서 옮기는 방법은 [move-to-pomotrip.md](move-to-pomotrip.md)에 있어요.
+Render 서비스를 처음부터 새로 만드는 방법은 [render-setup.md](render-setup.md)에 있어요.
 코드로 할 수 있는 건 이미 넣어 두었고, 아래 🙋 표시는 본인만 할 수 있는 일이에요.
 모든 값은 **Render → pomotrip → Environment**에만 넣고 채팅이나 코드에는 쓰지 마세요.
 

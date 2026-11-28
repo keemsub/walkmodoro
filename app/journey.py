@@ -26,7 +26,7 @@ log = logging.getLogger("walkmodoro.search")
 # 경로 안의 driving은 이름일 뿐이고, routed-foot 서버는 항상 도보 길로 답해요.
 OSM_FOOT_URL = "https://routing.openstreetmap.de/routed-foot/route/v1/driving"
 ORS_DIRECTIONS_URL = "https://api.openrouteservice.org/v2/directions/foot-walking/geojson"
-USER_AGENT = "walkmodoro/0.1 (+https://github.com/keemsub/walkmodoro)"
+USER_AGENT = "pomotrip/0.1 (+https://github.com/keemsub/pomotrip)"
 
 
 @dataclass

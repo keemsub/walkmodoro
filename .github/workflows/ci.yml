@@ -22,9 +22,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: 배포용 이미지 빌드
-        run: docker build -t walkmodoro .
+        run: docker build -t pomotrip .
       - name: 컨테이너 실행 확인
         run: |
-          docker run -d --rm -p 8000:10000 -e PORT=10000 --name wm walkmodoro
+          docker run -d --rm -p 8000:10000 -e PORT=10000 --name wm pomotrip
           for i in $(seq 1 20); do curl -fs localhost:8000/health && exit 0; sleep 1; done
           docker logs wm; exit 1

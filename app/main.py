@@ -13,7 +13,6 @@ from fastapi.responses import (
     FileResponse,
     HTMLResponse,
     PlainTextResponse,
-    RedirectResponse,
     Response,
 )
 from fastapi.staticfiles import StaticFiles
@@ -61,19 +60,6 @@ app.add_middleware(
     max_age=60 * 60 * 24 * 60,
 )
 app.include_router(auth_router)
-
-
-@app.middleware("http")
-async def moved_redirect(request: Request, call_next):
-    """MOVED_TO가 있으면 이사 안내만 해요: 새 주소로 보내고, 기기 기록도 챙겨 가요."""
-    target = get_settings().moved_to.rstrip("/")
-    path = request.url.path
-    if not target.startswith("https://") or path == "/health":
-        return await call_next(request)
-    if path == "/":
-        return templates.TemplateResponse(request, "moved.html", {"target": target})
-    query = f"?{request.url.query}" if request.url.query else ""
-    return RedirectResponse(f"{target}{path}{query}", status_code=301)
 
 
 app.mount("/static", StaticFiles(directory=BASE_DIR / "static"), name="static")

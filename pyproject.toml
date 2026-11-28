@@ -1,5 +1,5 @@
 [project]
-name = "walkmodoro"
+name = "pomotrip"
 version = "0.1.0"
 description = "집중한 시간만큼 걸어서 갈 수 있는 곳을 보여주는 뽀모도로"
 requires-python = ">=3.12"

@@ -42,7 +42,7 @@ Pomotrip은 웹앱이라 지금도 휴대폰 **홈 화면에 추가**하면 앱�
 Render 무료 요금제는 15분 동안 아무도 안 쓰면 서버가 잠들어서, 다음 사람이 열 때 **50초쯤** 기다려야 해요.
 스토어 심사자나 첫 사용자가 그걸 보면 앱이 고장 난 줄 알아요.
 
-1. Render 대시보드 → walkmodoro 서비스 → **Settings → Instance Type** → `Starter`(월 7달러)로 바꿔요.
+1. Render 대시보드 → pomotrip 서비스 → **Settings → Instance Type** → `Starter`(월 7달러)로 바꿔요.
 2. (권장) 내 도메인 연결: 도메인 업체(가비아, Cloudflare 등)에서 주소를 사고(1년 1~2만 원),
    Render → **Settings → Custom Domains → Add**에 입력한 뒤 안내대로 DNS를 넣어요.
    - 도메인을 바꾸면 **카카오·구글 로그인 설정의 Redirect URI**에도 새 주소를 추가해야 해요
@@ -71,7 +71,7 @@ Render 무료 요금제는 15분 동안 아무도 안 쓰면 서버가 잠들어
 
 1. https://www.pwabuilder.com 에 내 앱 주소(`https://내주소`)를 넣고 **Start**.
 2. **Package For Stores → Android → Generate Package**.
-   - Package ID: 예) `com.내이름.walkmodoro` (한 번 정하면 못 바꿔요)
+   - Package ID: 예) `com.내이름.pomotrip` (한 번 정하면 못 바꿔요)
    - App name: `Pomotrip`
    - Signing key: **Create new** 그대로 두기
 3. 받은 zip 안에는 `.aab`(플레이에 올릴 파일), **서명 키(signing.keystore)와 비밀번호 파일**,
